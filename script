@@ -1,0 +1,10 @@
+#!/bin/bash
+git clone https://github.com/angelinapejcic/spartans.git
+cd spartans
+git checkout -b __test__
+touch testFile
+echo "neki text" >> testFile
+git add testFile
+git commit -m "testFile"
+git push --set-upstream origin __test__
+git status
